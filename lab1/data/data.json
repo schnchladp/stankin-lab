@@ -1,0 +1,86 @@
+{
+    "name": "Служба курьерской доставки",
+    "customers": [
+        {
+            "id": 1,
+            "name": "Алина",
+            "phone": "+79000000001"
+        }
+    ],
+    "couriers": [
+        {
+            "id": 1,
+            "name": "Аделина",
+            "phone": "+79111111111",
+            "license": "1234567890",
+            "available": true
+        }
+    ],
+    "tariffs": [
+        {
+            "id": 1,
+            "name": "Стандарт",
+            "price_km": 100,
+            "min_price": 200,
+            "price_kg": 20,
+            "express_coefficient": 1.5,
+            "fragile_coefficient": 1.2
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "customer_id": 1,
+            "parcel_id": 1,
+            "description": "Ваза",
+            "weight": 3.5,
+            "declared_value": 2500.0,
+            "fragile": true,
+            "distance": 5.0,
+            "status": "delivered",
+            "sender": {
+                "city": "Москва",
+                "street": "Тверская",
+                "house": "10",
+                "apartment": "25"
+            },
+            "receiver": {
+                "city": "Москва",
+                "street": "Арбат",
+                "house": "15",
+                "apartment": ""
+            }
+        }
+    ],
+    "deliveries": [
+        {
+            "id": 1,
+            "order_id": 1,
+            "courier_id": 1,
+            "transport": {
+                "id": 1,
+                "registration_number": "А123ВС77",
+                "transport_type": "car"
+            },
+            "status": "delivered"
+        }
+    ],
+    "payments": [
+        {
+            "id": 1,
+            "order_id": 1,
+            "amount": 1026.0,
+            "method": "card",
+            "paid": true
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "customer_id": 1,
+            "delivery_id": 1,
+            "rating": 5,
+            "comment": "Отлично"
+        }
+    ]
+}
