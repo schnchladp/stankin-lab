@@ -1,0 +1,10 @@
+[project]
+name = "binary-numbers"
+version = "0.1.0"
+description = "Проверка и поиск двоичных чисел (регулярные выражения), лаб. работа №2, вариант 26"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
